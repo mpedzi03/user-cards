@@ -1,0 +1,44 @@
+html body {
+  background-color: #F7F8FA;
+  color: #212529;
+}
+
+#app {
+  font-family: 'Snell Roundhand',Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.new-user-form h2, .sort-dropdown h2 {
+  font-weight: bold;
+  text-align: center;
+}
+
+#nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 999;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1f356e !important;
+  border-color: #1b2b54 !important;
+}
+
+.btn-outline-primary {
+  color: #1f356e !important;
+  border-color: #1f356e !important;
+}
+
+.btn-outline-primary:hover {
+  color: #ffffff !important;
+  border-color: #1f356e !important;
+  background-color: #1f356e !important;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0.3rem;
+}

@@ -153,7 +153,7 @@
             </div>
           </div>
 
-          <button type="submit" class="app-btn mt-3">Add User</button>
+          <button type="submit" class="btn-primary mt-3">Add User</button>
           <p class="text-success" v-if="submitStatus === 'OK'">New user added!</p>
           <p class="text-danger" v-if="submitStatus === 'ERROR'">Please fill the form correctly.</p>
           <p class="text-info" v-if="submitStatus === 'PENDING'">Sending...</p>

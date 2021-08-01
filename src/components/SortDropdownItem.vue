@@ -21,7 +21,7 @@ export default {
 div {
   border: 1px solid #ffffff;
   border-radius: 5px;
-  background-color: #240090;
+  background-color: #1f356e;
   color: #ffffff;
   cursor: pointer;
   font-weight: bold;
@@ -36,6 +36,6 @@ div:hover {
 }
 
 div:active {
-  background-color: #190061;
+  background-color: #1f356e;
 }
 </style>

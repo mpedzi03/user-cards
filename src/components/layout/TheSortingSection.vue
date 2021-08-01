@@ -1,6 +1,6 @@
 <template>
   <div @transitionend="removeTransitionClass" class="sort-dropdown" ref="sort-dropdown">
-    <h2>Choose a Sort Type</h2>
+    <h2>Sort by</h2>
     <div class="row">
       <div class="col-md-8 offset-md-2">
         <sort-dropdown-item
@@ -83,17 +83,21 @@ export default {
 .dropdown-visible {
   display: block;
 }
+
 .dropdown-active {
   display: block;
   opacity: 1;
 }
+
 .dropdown-transition.dropdown-visible {
   display: block;
   opacity: 1;
 }
+
 .dropdown-transition {
   transition: opacity 0.5s ease;
 }
+
 .dropdown-hidden {
   display: block;
   opacity: 0;

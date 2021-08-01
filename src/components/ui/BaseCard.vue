@@ -10,33 +10,14 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .user-section {
-  border: 2px ridge #ffffff;
-  border-radius: 6px;
-  background-color: #240090;
-  margin-top: 15px;
-  padding: 15px 10px;
-  color: white;
   transition: .15s;
 }
 
 .user-section:hover {
   transform: scale(1.02);
-}
-
-.user-info-heading {
-  text-decoration: underline;
-}
-.personal-info-section {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.other-info-section {
-  margin-top: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
 }
 
 @media only screen and (max-width: 575px) {

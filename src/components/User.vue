@@ -1,36 +1,37 @@
 <template>
   <base-card>
-    <div class="user-section text-center">
-
+    <div class="user-section border mt-3 rounded-2 bg-white">
       <div class="row">
-        <div class="col-8 offset-2 personal-info-section">
-          <h2>{{user.name}}</h2>
-          <h3>( <b-icon-person/> {{user.username}} )</h3>
-          <div>
-            <p><b-icon-mailbox/> {{user.email}}</p>
-            <p><b-icon-telephone/> {{user.phone}}</p>
-            <p><b-icon-ui-checks/> {{user.website}}</p>
+        <div class="col-12">
+          <div class="card">
+            <div class="card-header bg-white">
+              <h5 class="card-title fw-bold"><b-icon-person/> {{user.name}} ({{user.username}})</h5>
+            </div>
+            <div class="card-body">
+              <div>
+                <span class="border p-1 me-2 rounded"><b-icon-mailbox/> {{user.email}}</span>
+                <span class="border p-1 me-2 rounded"><b-icon-telephone/> {{user.phone}}</span>
+                <span class="border p-1 me-2 rounded"><b-icon-ui-checks/> {{user.website}}</span>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col border-end">
+                  <p class="fw-bold text-secondary"><b-icon-map/> Address Info</p>
+                  <div>{{user.address.street}}<br>
+                    {{user.address.suite}}<br>
+                    {{user.address.city}}, {{user.address.zipcode}}</div>
+                </div>
+                <div class="col">
+                  <p class="fw-bold text-secondary"><b-icon-house-door/> Company Info</p>
+                  <div>{{user.company.name}}<br>
+                    {{user.company.catchPhrase}}<br>
+                    {{user.company.bs}}</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-
-      <hr>
-
-      <div class="row other-info-section">
-        <div class="col-md-6 mb-3">
-          <h3 class="user-info-heading">Address Info</h3>
-          <h4>{{user.address.street}}</h4>
-          <h4>{{user.address.suite}}</h4>
-          <h4>{{user.address.city}}, {{user.address.zipcode}}</h4>
-        </div>
-        <div class="col-md-6">
-          <h3 class="user-info-heading">Company Info</h3>
-          <h4>{{user.company.name}}</h4>
-          <h4>{{user.company.catchPhrase}}</h4>
-          <h4>{{user.company.bs}}</h4>
-        </div>
-      </div>
-
     </div>
   </base-card>
 </template>
